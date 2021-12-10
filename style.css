@@ -67,12 +67,12 @@ header {
   width: 100%;
   animation: immag 2s linear;
 }
-@keyframes immag{
-  from{
+@keyframes immag {
+  from {
     opacity: 0;
   }
-  to{
-    opacity:1;
+  to {
+    opacity: 1;
   }
 }
 .fullscreen-info {
@@ -348,49 +348,83 @@ header {
 }
 /* media query */
 @media only screen and (min-device-width: 375px) and (max-device-width: 736px) {
-  .nav{
-    display:none;
+  .nav {
+    display: none;
   }
-.burger-menu{
-  display: block;
+  .burger-menu {
+    display: block;
+  }
+  .fullscreen-info ul li:first-child {
+    font-size: 60px;
+  }
+  .fullscreen-info ul li:nth-child(3) {
+    font-size: 30px;
+  }
+  .fullscreen-info ul li:last-child {
+    font-size: 25px;
+  }
+  .fullscreen {
+    flex-wrap: wrap;
+  }
+  #professional-title {
+    font-size: 50px;
+  }
+  #prof-know {
+    font-size: 30px;
+  }
+  .professional-list p {
+    width: 100px;
+  }
+  #a {
+    width: 200px;
+  }
+  #d {
+    width: 150px;
+  }
+  #e {
+    width: 50px;
+  }
+  .portfolio p {
+    font-size: 50px;
+  }
+  .experience p {
+    font-size: 50px;
+  }
+  .contatti p {
+    font-size: 50px;
+  }
 }
-.fullscreen-info ul li:first-child {
-  font-size: 60px;
-}
-.fullscreen-info ul li:nth-child(3) {
-  font-size: 30px;
-}
-.fullscreen-info ul li:last-child {
-  font-size: 25px;
-}
-.fullscreen{
-  flex-wrap: wrap;
-}
-#professional-title{
-  font-size:50px;
-}
-#prof-know{
-  font-size:30px;
-}
-.professional-list p{
-  width: 100px;
-}
-#a {
-  width: 200px;
-}
-#d {
-  width: 150px;
-}
-#e {
-  width: 50px;
-}
-.portfolio p {
-  font-size: 50px;
-}
-.experience p {
-  font-size: 50px;
-}
-.contatti p{
-  font-size:50px;
-}
+@media (prefers-color-scheme: dark) {
+  body {
+    background-image: url("img/image.jpg");
+  }
+  .link:hover {
+    background-color: black;
+    color: white;
+  }
+  .fullscreen {
+    color: white;
+  }
+  .professional {
+    color: white;
+  }
+  #professional-title {
+    color: white;
+  }
+  .professional-list p {
+    background-color: white;
+    color: black;
+  }
+  .portfolio p {
+    color: white;
+  }
+  .experience p {
+    color: white;
+  }
+  .timeline ul li {
+    background-color: white;
+  }
+  .contatti p {
+    color: white;
+  }
 }
