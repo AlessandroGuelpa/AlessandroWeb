@@ -1,6 +1,8 @@
 * {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
+  scroll-margin-top: 130px;
 }
 body {
   background-image: url("Savin-NY-Website-Background-Web.jpg");
@@ -43,7 +45,6 @@ header {
   border-right: 2px dotted transparent;
   transition: 0.4s;
 }
-
 .link:hover {
   background-color: white;
   color: black;
@@ -68,7 +69,6 @@ header {
 .fullscreen-info {
   margin-left: 15%;
 }
-
 .fullscreen-info ul li {
   list-style: none;
   animation: slide-up 2s;
@@ -101,7 +101,6 @@ header {
   margin-top: 50px;
   display: inline-block;
 }
-
 .professional-list p {
   width: 300px;
   height: 20px;
@@ -132,7 +131,6 @@ header {
   flex-wrap: nowrap;
   flex-direction: row;
 }
-
 .schede-container img {
   width: 100%;
 }
@@ -152,7 +150,7 @@ header {
 }
 .experience {
   margin-top: 30vh;
-  margin-bottom: 20vh;
+  margin-bottom: 35vh;
 }
 .experience p {
   text-align: center;
@@ -167,7 +165,6 @@ header {
   padding-top: 50px;
   background: black;
 }
-
 .timeline ul li::after {
   content: "";
   position: absolute;
@@ -179,7 +176,6 @@ header {
   border-radius: 50%;
   background: inherit;
 }
-
 .timeline ul li div {
   position: relative;
   bottom: 0;
@@ -187,7 +183,6 @@ header {
   padding: 15px;
   background: #f45b69;
 }
-
 .timeline ul li div::before {
   content: "";
   position: absolute;
@@ -196,17 +191,14 @@ header {
   height: 0;
   border-style: solid;
 }
-
 .timeline ul li:nth-child(odd) div {
   left: 45px;
 }
-
 .timeline ul li:nth-child(odd) div::before {
   left: -15px;
   border-width: 8px 16px 8px 0;
   border-color: transparent #f45b69 transparent transparent;
 }
-
 .timeline ul li:nth-child(even) div {
   left: -469px;
 }
@@ -219,19 +211,16 @@ header {
   display: flex;
   min-height: 100vh;
 }
-
 .container {
   flex: 0 1 700px;
   margin: auto;
   padding: 10px;
 }
-
 .screen {
   position: relative;
   background: #3e3e3e;
   border-radius: 15px;
 }
-
 .screen:after {
   content: "";
   display: block;
@@ -244,7 +233,6 @@ header {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
   z-index: -1;
 }
-
 .screen-header {
   display: flex;
   align-items: center;
@@ -253,36 +241,29 @@ header {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
-
 .screen-header-left {
   margin-right: auto;
 }
-
 .screen-header-button {
   display: inline-block;
-  width: 8px;
-  height: 8px;
+  width: 12px;
+  height: 12px;
   margin-right: 3px;
   border-radius: 8px;
   background: white;
 }
-
 .screen-header-button.close {
   background: #ed1c6f;
 }
-
 .screen-header-button.maximize {
   background: #e8e925;
 }
-
 .screen-header-button.minimize {
   background: #74c54f;
 }
-
 .screen-header-right {
   display: flex;
 }
-
 .screen-header-ellipsis {
   width: 3px;
   height: 3px;
@@ -290,16 +271,13 @@ header {
   border-radius: 8px;
   background: white;
 }
-
 .screen-body {
   display: flex;
 }
-
 .screen-body-item {
   flex: 1;
   padding: 50px;
 }
-
 .screen-body-item.left {
   display: flex;
   flex-direction: column;
@@ -317,7 +295,6 @@ header {
   color: white;
   font-size: 26px;
 }
-
 .app-title:after {
   content: "";
   display: block;
@@ -327,6 +304,14 @@ header {
   width: 25px;
   height: 4px;
   background: white;
+}
+#contact{
+  scroll-margin-top: 150px;
+}
+.contatti p{
+  font-size:80px;
+  text-align: center;
+  margin-bottom: -20vh;
 }
 .social {
   display: flex;
