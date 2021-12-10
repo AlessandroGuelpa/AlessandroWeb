@@ -35,7 +35,20 @@ header {
 .burger {
   display: none;
 }
+.link {
+  text-decoration: none;
+  color: white;
+  padding-right: 25px;
+  font-size: 25px;
+  border-right: 2px dotted transparent;
+  transition: 0.4s;
+}
 
+.link:hover {
+  background-color: white;
+  color: black;
+  padding: 21.5px 50px;
+}
 .fullscreen {
   display: flex;
   flex-wrap: nowrap;
@@ -275,7 +288,7 @@ header {
   height: 3px;
   margin-left: 2px;
   border-radius: 8px;
-  background: #999;
+  background: white;
 }
 
 .screen-body {
@@ -291,8 +304,11 @@ header {
   display: flex;
   flex-direction: column;
 }
-.screen-body-item{
-  font-size:20px;
+.screen-body-item {
+  font-size: 20px;
+}
+.screen-body-item-span {
+  color: white;
 }
 .app-title {
   display: flex;
@@ -312,11 +328,11 @@ header {
   height: 4px;
   background: white;
 }
-.social{
+.social {
   display: flex;
-  margin-left:-50px;
-  margin-top:50px;
+  margin-left: -50px;
+  margin-top: 50px;
 }
-.social img{
-  border-radius:10px;
+.social img {
+  border-radius: 10px;
 }
