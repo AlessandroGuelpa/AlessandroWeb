@@ -13,6 +13,7 @@ body {
 }
 header {
   height: 70px;
+  width: 100vw;
   line-height: 70px;
   font-size: 25px;
   text-align: center;
@@ -329,4 +330,68 @@ header {
   to {
     margin-top: 50px;
   }
+}
+.burger-menu {
+  float: right;
+  height: 60px;
+  width: 30px;
+  margin-right: 25px;
+  display: none;
+}
+.burger-menu div:first-child {
+  height: 4px;
+  margin-top: 19px;
+}
+.burger-menu div {
+  background-color: white;
+  height: 4px;
+  margin-top: 5px;
+}
+/* media query */
+@media only screen and (min-device-width: 375px) and (max-device-width: 736px) {
+  .nav{
+    display:none;
+  }
+.burger-menu{
+  display: block;
+}
+.fullscreen-info ul li:first-child {
+  font-size: 60px;
+}
+.fullscreen-info ul li:nth-child(3) {
+  font-size: 30px;
+}
+.fullscreen-info ul li:last-child {
+  font-size: 25px;
+}
+.fullscreen{
+  flex-wrap: wrap;
+}
+#professional-title{
+  font-size:50px;
+}
+#prof-know{
+  font-size:30px;
+}
+.professional-list p{
+  width: 100px;
+}
+#a {
+  width: 200px;
+}
+#d {
+  width: 150px;
+}
+#e {
+  width: 50px;
+}
+.portfolio p {
+  font-size: 50px;
+}
+.experience p {
+  font-size: 50px;
+}
+.contatti p{
+  font-size:50px;
+}
 }
