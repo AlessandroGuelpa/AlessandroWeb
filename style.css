@@ -96,7 +96,7 @@ header {
 .professional {
   margin-top: 20vh;
   text-align: left;
-  margin-left:20px;
+  margin-left: 20px;
   font-size: 30px;
   color: black;
 }
@@ -338,29 +338,67 @@ header {
   width: 30px;
   height: 50px;
   display: none;
-  margin-top: -5px;
-  margin-right:12px;
+  margin-top: 10px;
+  margin-right: 12px;
 }
-.burger-menu div:first-child {
+.burger-slice input {
+  display: block;
+  position: absolute;
+  opacity: 0;
+  margin-left: -6px;
+  width: 40px;
+  height: 32px;
+  z-index: 2;
+  cursor: pointer;
+}
+.burger-slice div:first-child {
   height: 4px;
   margin-top: 19px;
 }
-.burger-menu div {
+.burger-slice div {
   background-color: white;
   height: 4px;
   margin-top: 5px;
+}
+.burger-slice ul {
+  position: absolute;
+  list-style: none;
+  transform: translate(15%);
+  font-size: 50px;
+  margin-top:20px;
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  transition: transform 0.5s linear;
+}
+input:checked ~ ul {
+  transform: translate(-89%);
+  transition: transform 0.5s linear;
+
+}
+#burger-nav li {
+  margin-top: 100px;
+  list-style: none;
+}
+#burger-nav li:first-child {
+  margin-top: 30px;
+}
+#burger-nav li a:link,
+#burger-nav li a:visited {
+  text-decoration: none;
+  color: white;
 }
 /* media query */
 @media only screen and (min-device-width: 375px) and (max-device-width: 736px) {
   body {
     text-align: center;
   }
-  header{
+  header {
     height: 50px;
     line-height: 50px;
   }
-  .social{
-    margin-top:30px;
+  .social {
+    margin-top: 30px;
     margin-left: 150px;
   }
   .fullscreen-info {
@@ -369,7 +407,7 @@ header {
   .img-fullscreen {
     margin-left: 0%;
     margin-right: 0%;
-    padding:10px;
+    padding: 10px;
   }
   .nav {
     display: none;
@@ -377,9 +415,12 @@ header {
   .burger-menu {
     display: block;
   }
-  .burger-menu p{
+  .burger-menu:hover .burger-nav {
+    display: block;
+  }
+  .burger-menu p {
     color: white;
-    float:left;
+    float: left;
   }
   .fullscreen-info {
     font-size: 35px;
@@ -418,7 +459,7 @@ header {
   #e {
     width: 50px;
   }
-  .container-portfolio{
+  .container-portfolio {
     flex-direction: column;
   }
 
@@ -433,7 +474,7 @@ header {
   }
   .timeline ul li div {
     width: 110px;
-    padding:auto 0;
+    padding: auto 0;
   }
   .timeline ul li:nth-child(even) div {
     left: -176px;
@@ -443,7 +484,7 @@ header {
     flex-direction: column;
   }
   .container {
-    padding: 0 10px;;
+    padding: 0 10px;
   }
   .background {
     display: block;
@@ -451,14 +492,13 @@ header {
   .screen-body-item {
     padding: 10px 0;
   }
-  .schede-container{
-    margin-top:50px;
-    padding:10px;
+  .schede-container {
+    margin-top: 50px;
+    padding: 10px;
   }
-  .schede-container img{
+  .schede-container img {
     height: 30vh;
     border-radius: 10px;
-
   }
   .schede-container:first-child {
     margin-top: 0px;
@@ -466,8 +506,8 @@ header {
   .schede-container:nth-child(3) {
     margin-top: 0px;
   }
-  .experience{
-    margin-top:20vh;
+  .experience {
+    margin-top: 20vh;
   }
 }
 @media (prefers-color-scheme: dark) {
