@@ -95,12 +95,14 @@ header {
 }
 .professional {
   margin-top: 20vh;
-  text-align: center;
+  text-align: left;
+  margin-left:20px;
   font-size: 30px;
   color: black;
 }
 #professional-title {
   font-size: 80px;
+  text-align: center;
   color: black;
   margin-bottom: 80px;
 }
@@ -333,10 +335,11 @@ header {
 }
 .burger-menu {
   float: right;
-  height: 60px;
   width: 30px;
-  margin-right: 25px;
+  height: 50px;
   display: none;
+  margin-top: -5px;
+  margin-right:12px;
 }
 .burger-menu div:first-child {
   height: 4px;
@@ -351,7 +354,14 @@ header {
 @media only screen and (min-device-width: 375px) and (max-device-width: 736px) {
   body {
     text-align: center;
-    padding: 5%;
+  }
+  header{
+    height: 50px;
+    line-height: 50px;
+  }
+  .social{
+    margin-top:30px;
+    margin-left: 150px;
   }
   .fullscreen-info {
     margin-left: 0%;
@@ -359,12 +369,17 @@ header {
   .img-fullscreen {
     margin-left: 0%;
     margin-right: 0%;
+    padding:10px;
   }
   .nav {
     display: none;
   }
   .burger-menu {
     display: block;
+  }
+  .burger-menu p{
+    color: white;
+    float:left;
   }
   .fullscreen-info {
     font-size: 35px;
@@ -417,23 +432,33 @@ header {
     font-size: 50px;
   }
   .timeline ul li div {
-    width: 80px;
+    width: 110px;
+    padding:auto 0;
   }
   .timeline ul li:nth-child(even) div {
-    left: -146px;
+    left: -176px;
   }
   .screen-body {
     display: flex;
     flex-direction: column;
   }
   .container {
-    padding: 0;
+    padding: 0 10px;;
   }
   .background {
     display: block;
   }
   .screen-body-item {
     padding: 10px 0;
+  }
+  .schede-container{
+    margin-top:50px;
+    padding:10px;
+  }
+  .schede-container img{
+    height: 30vh;
+    border-radius: 10px;
+
   }
   .schede-container:first-child {
     margin-top: 0px;
