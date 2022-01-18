@@ -510,7 +510,7 @@ input:checked ~ ul {
 }
 @media (prefers-color-scheme: dark) {
   body {
-    background-image: url("img/image.jpg");
+    background-image: url("img/image.webp");
   }
   .link:hover {
     background-color: black;
