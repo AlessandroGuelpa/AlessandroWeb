@@ -142,9 +142,10 @@ header {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
+  margin-left: 5%;
 }
 .schede-container img {
-  width: 100%;
+  width: 90%;
 }
 .schede-container:first-child {
   margin-top: 100px;
