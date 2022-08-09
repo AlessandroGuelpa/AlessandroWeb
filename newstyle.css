@@ -1,0 +1,46 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Mouse Memoirs', sans-serif;
+}
+.homepage{
+    height: 100vh;
+    width: 100vw;
+    opacity: 0.7;
+    background-image: url("h68x0up43hmknl5tjcww.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.text-homepage{
+    position: absolute;
+    pointer-events: none;
+    font-size: 75px;
+    color:black;
+    z-index: 1000;
+    text-align: center;
+    top:40%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    opacity:1;
+}
+.slide{
+    position: absolute;
+    font-size: 40px;
+    color:black;
+    z-index: 1000;
+    text-align: center;
+    top:95%;
+    left:42.5%;
+    animation: slide 0.5s infinite;
+    transform: translate(-50%, -50%);
+    opacity:1;
+    pointer-events: none;
+}
+@keyframes slide{
+    0% { transform: translateY(1px)}
+  50% { transform: translateY(-1px)}
+  100% { transform: translateY(1px)}
+}
+.info{
+    text-align: center;
+}
