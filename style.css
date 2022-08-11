@@ -5,11 +5,11 @@
   scroll-margin-top: 130px;
 }
 body {
-  background-image: url("img/Savin-NY-Website-Background-Web.webp");
+  background-image: url("imageedit_2_8971071660.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Mouse Memoirs", sans-serif;
 }
 header {
   height: 70px;
@@ -36,7 +36,7 @@ header {
 }
 .link {
   text-decoration: none;
-  color: white;
+  color: black;
   padding-right: 25px;
   font-size: 25px;
   border-right: 2px dotted transparent;
@@ -91,7 +91,7 @@ header {
   font-size: 30px;
 }
 .professional {
-  margin-top:50px;
+  margin-top: 50px;
   text-align: center;
   font-size: 30px;
   color: black;
@@ -503,39 +503,5 @@ input:checked ~ ul {
   }
   .experience {
     margin-top: 20vh;
-  }
-}
-@media (prefers-color-scheme: dark) {
-  body {
-    background-image: url("img/image.webp");
-  }
-  .link:hover {
-    background-color: black;
-    color: white;
-  }
-  .fullscreen {
-    color: white;
-  }
-  .professional {
-    color: white;
-  }
-  #professional-title {
-    color: white;
-  }
-  .professional-list p {
-    background-color: white;
-    color: black;
-  }
-  .portfolio p {
-    color: white;
-  }
-  .experience p {
-    color: white;
-  }
-  .timeline ul li {
-    background-color: white;
-  }
-  .contatti p {
-    color: white;
   }
 }
