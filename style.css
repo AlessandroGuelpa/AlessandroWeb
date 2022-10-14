@@ -43,8 +43,6 @@ header {
   transition: 0.4s;
 }
 .link:hover {
-  background-color: white;
-  color: black;
   padding: 21.5px 50px;
 }
 .fullscreen {
@@ -366,7 +364,9 @@ header {
   margin-top: 10px;
   background-color: black;
   height: 100vh;
+  overflow: hidden;
   width: 100vw;
+  opacity: 0.9;
 }
 input:checked ~ ul {
   display: block;
@@ -384,7 +384,7 @@ input:checked ~ ul {
   color: white;
 }
 /* media query */
-@media only screen and (min-device-width: 375px) and (max-device-width: 736px) {
+@media only screen and (min-device-width: 375px) and (max-device-width: 786px) {
   body {
     text-align: center;
   }
@@ -421,17 +421,18 @@ input:checked ~ ul {
     font-size: 35px;
   }
   .fullscreen-info ul li:first-child {
-    font-size: 45px;
+    font-size: 40px;
   }
   .fullscreen-info ul li:nth-child(3) {
-    font-size: 20px;
+    font-size: 30px;
   }
   .fullscreen-info ul li:last-child {
-    font-size: 15px;
+    font-size: 25px;
     margin-bottom: 10vh;
   }
   .fullscreen {
     flex-wrap: wrap;
+    flex-direction: column;
   }
   #professional-title {
     font-size: 35px;
@@ -443,16 +444,16 @@ input:checked ~ ul {
     font-size: 20px;
   }
   .professional-list p {
-    width: 100px;
-  }
-  #a {
     width: 200px;
   }
+  #a {
+    width: 300px;
+  }
   #d {
-    width: 150px;
+    width: 250px;
   }
   #e {
-    width: 50px;
+    width: 150px;
   }
   .container-portfolio {
     flex-direction: column;
